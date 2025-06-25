@@ -1,0 +1,167 @@
+/* Continuous floating animation */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-section h1,
+.about-section p {
+  animation: floatText 2s ease-in-out infinite;
+}
+
+
+.about-section h1 {
+  animation: floatText 2s ease-in-out infinite;
+}
+
+.about-section p {
+  animation: floatText 4s ease-in-out infinite;
+}
+
+
+
+
+.about-section {
+  padding: 2rem 2rem;
+  background: #000000;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+}
+
+.about-section h1 {
+  font-size: 4.2rem;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  font-weight: bolder;
+  color: white;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding-bottom: 25px;
+  font-weight: 500;
+  /* font-style: italic; */
+
+}
+
+.about-section:hover {
+  transform: scale(1.03);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.exploration-card {
+  flex: 0 0 auto;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 8px solid white;
+  transition: transform 0.4s ease;
+  transform: rotate(-5deg);
+}
+
+.exploration-card:hover {
+  transform: scale(1.05) rotate(-5deg);
+}
+
+.exploration-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+}
+
+
+/*icons*/
+
+
+/*glow name*/
+.glow-text {
+  color: white;
+  text-shadow:
+    0 0 10px rgba(255, 247, 0, 0.448),
+    0 0 10px rgba(255, 247, 0, 0.49),
+    0 0 20px rgba(255, 247, 0, 0.5),
+    0 0 20px rgba(255, 247, 0, 0.451);
+}
+
+
+.social-shit {
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem; /* increased spacing between icons */
+  padding-bottom: 1rem;
+}
+.social-shit a svg,
+.social-shit a i {
+  color: white !important;
+  fill: white !important;
+  font-size: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.social-shit a:hover,
+.social-shit a:focus,
+.social-shit a:active {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+
+.download-resume-btn {
+  display: inline-block;
+  /* margin-top: 0.1rem; */
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.download-resume-btn:hover {
+  background-color: #ffe657;
+  transform: scale(1.05);
+  cursor: pointer;
+}

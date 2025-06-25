@@ -1,0 +1,90 @@
+.explorations-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #efefef;
+}
+
+.explorations-section h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caption {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2em;
+}
+
+/* Horizontal scroll container */
+.exploration-gallery {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer/Edge */
+}
+
+.exploration-gallery::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, Opera */
+}
+
+
+/* Hide vertical scrollbar */
+.exploration-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.exploration-gallery::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* .exploration-card {
+  flex: 0 0 auto;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border: 8px solid white; 
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  object-fit: fill;
+}
+
+.exploration-card:hover {
+  transform: scale(1.05);
+} */
+
+.exploration-card {
+  flex: 0 0 auto;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 8px solid white;
+  scroll-snap-align: start;
+  transition: transform 0.4s ease;
+  transform: rotate(-5deg); /* 🔁 2D ROTATION ONLY */
+}
+
+
+.exploration-card:hover {
+  transform: perspective(1000px) rotateY(-12deg) rotateX(2deg) scale(1.05); /* <<< Modified */
+}
+
+
+.exploration-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+  
+}
