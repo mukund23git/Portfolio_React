@@ -36,7 +36,7 @@ const projects = [
     image: "/assets/Sheshield.png",
     link: "/sheshield.apk",
     action: "Download for Android",
-    github: "https://github.com/yourusername/minglee",
+    github: "https://github.com/mukund23git/Sheshield",
   },
   {
     title: "Hackify",
